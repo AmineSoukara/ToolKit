@@ -5,15 +5,15 @@ except:
         # TODO optimize for vps use fully - currently only heroku is focused
         # Set true if its VPS [currently not fully working]
         IS_VPS = False
-        API_HASH = "aaea06c47290c6e551d851d4844469e6"
-        API_ID = 0
-        BOT_TOKEN = "1520379734:AAHTW6m-q942SUOGPpgcyspEPi-Ht3X2LXM"
-        BASE_URL_OF_BOT = "https://thetorrentleechrobot.herokuapp.com"
+        API_HASH = "11d05c637abdb46e35f51bc73241c75c"
+        API_ID = 1250763
+        BOT_TOKEN = "1523666805:AAFtDwzSBdHe88aOBsntwsUBxRyrv5GxVug"
+        BASE_URL_OF_BOT = "https://toolkit1717.herokuapp.com"
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
-        ALD_USR = [1147526472,1453680819,-1001244650331]
+        ALD_USR = [853393439,1453680819,-1001375553926]
         
         # Time to wait before edit message
-        EDIT_SLEEP_SECS = 40
+        EDIT_SLEEP_SECS = 10
 
         # Telegram Upload Limit (in bytes)
         TG_UP_LIMIT = 1900000000
@@ -22,10 +22,10 @@ except:
         FORCE_DOCUMENTS = False
 
         # Chracter to use as a completed progress 
-        COMPLETED_STR = "▰"
+        COMPLETED_STR = "■"
 
         # Chracter to use as a incomplete progress
-        REMAINING_STR = "▱"
+        REMAINING_STR = "□"
 
         # DB URI for access
         DB_URI = "dbname=tortk user=hmyekuffsptavt password=de7eec1c2ca584018f0b1c999b942844325da773b2aa10c5649f16c938ffcc5d host=127.0.0.1 port=5432"
