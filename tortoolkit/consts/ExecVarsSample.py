@@ -10,7 +10,7 @@ except:
         BOT_TOKEN = "1523666805:AAFtDwzSBdHe88aOBsntwsUBxRyrv5GxVug"
         BASE_URL_OF_BOT = "https://toolkit1717.herokuapp.com"
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
-        ALD_USR = [853393439,1453680819,-1001375553926]
+        ALD_USR = [853393439,-1001375553926]
         
         # Time to wait before edit message
         EDIT_SLEEP_SECS = 10
@@ -28,7 +28,7 @@ except:
         REMAINING_STR = "□"
 
         # DB URI for access
-        DB_URI = "postgres://hmyekuffsptavt:de7eec1c2ca584018f0b1c999b942844325da773b2aa10c5649f16c938ffcc5d@ec2-54-157-12-250.compute-1.amazonaws.com:5432/dd8eq05771296g"
+        DB_URI = "postgres://kpalpcwrmswlxt:6019d21bd5ed0076d003b41a6ad6078d4946a624c7a982f2630f451d2bfa0de3@ec2-54-172-219-218.compute-1.amazonaws.com:5432/dd3u820el3tsla"
 
         # The base direcory to which the files will be upload if using RCLONE
         RCLONE_BASE_DIR = "/"
