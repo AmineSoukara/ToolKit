@@ -170,9 +170,9 @@ async def check_progress_for_dl(aria2, gid, event, previous_message, rdepth = 0,
                 msg += f"\n<b>🔰 Using Engine:</b> <code>aria2 for directlink</code>"
                 if file.seeder is False:
                     """https://t.me/c/1220993104/670177"""
-                    msg += f"| S: {file.num_seeders} |"
-                # msg += f"\nStatus: {file.status}"
-                msg += f"\nETA: {file.eta_string()}"
+                    msg += f"| 📶 Seeder: {file.num_seeders} |"
+                # msg += f"\n🌐 Status: {file.status}"
+                msg += f"\n⏱ ETA: {file.eta_string()}"
                 #msg += f"\n<code>/cancel {gid}</code>"
                 
                 # format :- torcancel <provider> <identifier>
@@ -185,7 +185,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message, rdepth = 0,
                 # LOGGER.info(msg)
                 if msg != previous_message:
                     if rdepth < 3:
-                        await event.edit(msg,parse_mode="html", buttons=[KeyboardButtonCallback("Cancel Direct Leech",data=data.encode("UTF-8"))])
+                        await event.edit(msg,parse_mode="html", buttons=[KeyboardButtonCallback("Cancel ⛔ Url-DL",data=data.encode("UTF-8"))])
                     else:
                         await event.edit(msg,parse_mode="html")
                     previous_message = msg
