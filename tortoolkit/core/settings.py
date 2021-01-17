@@ -22,7 +22,7 @@ no = "❌"
 yes = "✅"
 # Central object is not used its Acknowledged 
 tordb = TorToolkitDB()
-header =  '<b>**TorToolKit** by <a href="https://github.com/yash-dk">YashDK</a></b>\n<u>ADMIN SETTINGS MENU - Beta v1</u>'
+header =  '<b>👾 Alty By <a href="tme/DamienRobot">AmineSoukara</a></b>\n<u> ADMIN SETTINGS MENU - Beta V7</u>'
 async def handle_setting_callback(e):
     db = tordb
     session_id,_ = db.get_variable("SETTING_AUTH_CODE")
