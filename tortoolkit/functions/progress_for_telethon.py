@@ -37,7 +37,7 @@ async def progress(current,total,message,file_name,start,time_out,cancel_msg=Non
             ''.join([get_val("REMAINING_STR") for i in range(20 - math.floor(percentage / 5))]),
             round(percentage, 2))
         
-        tmp = progress + "{0} of {1}\nSpeed: {2}/s\nETA: {3}\n".format(
+        tmp = progress + "{0} Of {1}\n🚀 Speed: {2}/s\n⏳ ETA: {3}\n".format(
             human_readable_bytes(current),
             human_readable_bytes(total),
             human_readable_bytes(speed),
