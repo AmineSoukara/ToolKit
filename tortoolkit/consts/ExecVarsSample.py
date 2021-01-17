@@ -10,13 +10,13 @@ except:
         BOT_TOKEN = "1523666805:AAFtDwzSBdHe88aOBsntwsUBxRyrv5GxVug"
         BASE_URL_OF_BOT = "https://toolkit1717.herokuapp.com"
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
-        ALD_USR = [853393439,-1001375553926]
+        ALD_USR = [853393439,-1001474594528,-1001375553926]
         
         # Time to wait before edit message
-        EDIT_SLEEP_SECS = 10
+        EDIT_SLEEP_SECS = 2
 
         # Telegram Upload Limit (in bytes)
-        TG_UP_LIMIT = 1900000000
+        TG_UP_LIMIT = 2097152000
 
         # Should force evething uploaded into Document
         FORCE_DOCUMENTS = False
@@ -42,7 +42,7 @@ except:
         RCLONE_ENABLED = False
 
         # If the user fails to select whether to use rclone or telegram to upload this will be the deafult.
-        DEFAULT_TIMEOUT = "leech"
+        DEFAULT_TIMEOUT = "dl"
 
         # For vps set path here or you can use runtime too
         RCLONE_CONFIG = False
