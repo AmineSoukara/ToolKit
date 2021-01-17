@@ -120,9 +120,9 @@ async def handle_user_settings(e,edit=False,msg="",submenu=None,sender_id=None):
 
 
         if edit:
-            rmess = await e.edit(header+"\nEnjoiii.\n"+msg,parse_mode="html",buttons=menu,link_preview=False, file="toolkit.jpg")
+            rmess = await e.edit(header+"\nEnjoy.\n"+msg,parse_mode="html",buttons=menu,link_preview=False, file="toolkit.jpg")
         else:
-            rmess = await e.reply(header+"\nEnjoiii.\n",parse_mode="html",buttons=menu,link_preview=False, file="toolkit.jpg")
+            rmess = await e.reply(header+"\nEnjoy.\n",parse_mode="html",buttons=menu,link_preview=False, file="toolkit.jpg")
     elif submenu == "rclonemenu":
         rcval = await get_string_variable("RCLONE_CONFIG",menu,"rcloneconfig",sender_id)
         if rcval != "None":
