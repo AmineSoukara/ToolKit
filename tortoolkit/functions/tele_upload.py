@@ -47,7 +47,7 @@ async def upload_handel(path,message,from_uid,files_dict,job_id=0,force_edit=Fal
                 sup_mes = user_msg
             
             data = "upcancel {} {} {}".format(message.chat_id,message.id,sup_mes.sender_id)
-            buts = [KeyboardButtonCallback("Cancel upload.",data.encode("UTF-8"))]
+            buts = [KeyboardButtonCallback("Cancel ⛔ Upload.",data.encode("UTF-8"))]
             message = await message.edit(buttons=buts)
 
 
@@ -113,7 +113,7 @@ async def upload_handel(path,message,from_uid,files_dict,job_id=0,force_edit=Fal
                 else:
                     sup_mes = user_msg
                 data = "upcancel {} {} {}".format(message.chat_id,message.id,sup_mes.sender_id)
-                buts = [KeyboardButtonCallback("Cancel upload.",data.encode("UTF-8"))]
+                buts = [KeyboardButtonCallback("Cancel ⛔ Upload.",data.encode("UTF-8"))]
                 await message.edit(buttons=buts)
 
             for file in dircon:
@@ -154,7 +154,7 @@ async def upload_handel(path,message,from_uid,files_dict,job_id=0,force_edit=Fal
                     sup_mes = user_msg
                 
                 data = "upcancel {} {} {}".format(message.chat_id,message.id,sup_mes.sender_id)
-                buts = [KeyboardButtonCallback("Cancel upload.",data.encode("UTF-8"))]
+                buts = [KeyboardButtonCallback("Cancel ⛔ Upload.",data.encode("UTF-8"))]
                 await message.edit(buttons=buts)
             #print(updb)
             if black_list_exts(path):
@@ -220,7 +220,7 @@ async def upload_a_file(path,message,force_edit,database=None,thumb_path=None,us
             sup_mes = user_msg
         
         data = "upcancel {} {} {}".format(message.chat_id,message.id,sup_mes.sender_id)
-        buts = [KeyboardButtonCallback("Cancel upload.",data.encode("UTF-8"))]
+        buts = [KeyboardButtonCallback("Cancel ⛔ Upload.",data.encode("UTF-8"))]
         msg = await message.reply("Uploading {}".format(file_name),buttons=buts)
     else:
         msg = message
