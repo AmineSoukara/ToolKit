@@ -1,0 +1,14 @@
+{
+  "name": "Telegram Torrent Leecher",
+  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @torrentleechgdrivesupport!",
+  "keywords": [
+    "telegramLeech"
+  ],
+  "repository": "https://github.com/bhardwajjEE/TorToolkit-Telegram",
+  "success_url": "https://t.me/TheTorrentRobot",
+  "website": "https://github.com/bhardwajjEE/TorToolkit-Telegram",
+  
+
+
+  "stack": "container"
+}
