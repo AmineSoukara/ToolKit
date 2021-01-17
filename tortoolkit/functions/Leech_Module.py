@@ -314,7 +314,7 @@ async def handle_ext_zip(path, rmess, omess):
 
 
 async def print_files(e,files,thash=None):
-    msg = f"<a href='tg://user?id={e.sender_id}'>Done</a>\n#uploads\n"
+    msg = f"<a href='tg://user?id={e.sender_id}'>✅ Done</a>\n©️ #Uploads @DamienHelp\n"
     if len(files) == 0:
         return
     
@@ -322,7 +322,7 @@ async def print_files(e,files,thash=None):
 
     for i in files.keys():
         link = f'https://t.me/c/{str(chat_id)[4:]}/{files[i]}'
-        msg += f'🚩 <a href="{link}">{i}</a>\n'
+        msg += f'👉 <a href="{link}">{i}</a>\n'
     
     await e.reply(msg,parse_mode="html")
 
@@ -353,25 +353,25 @@ async def print_files(e,files,thash=None):
         if index == 0:
             nextt = f'https://t.me/c/{chat_id}/{ids[index+1]}'
             buttons.append(
-                types.KeyboardButtonUrl("Next", nextt)
+                types.KeyboardButtonUrl("Next ➡️", nextt)
             )
             nextt = f'<a href="{nextt}">Next</a>\n'
         elif index == len(msgs)-1:
             prev = f'https://t.me/c/{chat_id}/{ids[index-1]}'
             buttons.append(
-                types.KeyboardButtonUrl("Prev", prev)
+                types.KeyboardButtonUrl("⬅️ Prev", prev)
             )
             prev = f'<a href="{prev}">Prev</a>\n'
         else:
             nextt = f'https://t.me/c/{chat_id}/{ids[index+1]}'
             buttons.append(
-                types.KeyboardButtonUrl("Next", nextt)
+                types.KeyboardButtonUrl("Next ➡️", nextt)
             )
             nextt = f'<a href="{nextt}">Next</a>\n'
             
             prev = f'https://t.me/c/{chat_id}/{ids[index-1]}'
             buttons.append(
-                types.KeyboardButtonUrl("Prev", prev)
+                types.KeyboardButtonUrl("⬅️ Prev", prev)
             )
             prev = f'<a href="{prev}">Prev</a>\n'
 
