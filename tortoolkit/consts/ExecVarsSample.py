@@ -28,8 +28,8 @@ except:
         REMAINING_STR = "□"
 
         # DB URI for access
-        DB_URI = "dbname=tortk user=hmyekuffsptavt password=de7eec1c2ca584018f0b1c999b942844325da773b2aa10c5649f16c938ffcc5d host=127.0.0.1 port=5432"
-        
+        DB_URI = "postgres://hmyekuffsptavt:de7eec1c2ca584018f0b1c999b942844325da773b2aa10c5649f16c938ffcc5d@ec2-54-157-12-250.compute-1.amazonaws.com:5432/dd8eq05771296g"
+
         # The base direcory to which the files will be upload if using RCLONE
         RCLONE_BASE_DIR = "/"
 
