@@ -561,18 +561,18 @@ async def handle_server_command(message):
         upb = "N/A"
 
     msg = (
-        "<b>CPU STATS:-</b>\n"
+        "<b>⭕ CPU STATS:-</b>\n"
         f"Cores: {cores} Logical: {lcores}\n"
         f"CPU Frequency: {freqcurrent}  Mhz Max: {freqmax}\n"
         f"CPU Utilization: {cpupercent}%\n"
         "\n"
-        "<b>MEMORY STATS:-</b>\n"
+        "<b>⭕ MEMORY STATS:-</b>\n"
         f"Available: {memavailable}\n"
         f"Total: {memtotal}\n"
         f"Usage: {mempercent}%\n"
         f"Free: {memfree}\n"
         "\n"
-        "<b>TRANSFER INFO:</b>\n"
+        "<b>⭕ TRANSFER INFO:</b>\n"
         f"Download: {dlb}\n"
         f"Upload: {upb}\n"
     )
@@ -598,9 +598,9 @@ async def about_me(message):
     val1  = get_val("LEECH_ENABLED")
     if val1 is not None:
         if val1:
-            leen = "Leech command enabled by admin."
+            leen = "dl command enabled by admin."
         else:
-            leen = "Leech command disabled by admin."
+            leen = "dl command disabled by admin."
     else:
         leen = "N/A"
 
@@ -614,10 +614,10 @@ async def about_me(message):
         rclone_m = "N/A"
 
     msg = (
-        "<b>Name</b>: <code>TorToolkit</code>\n"
+        "<b>Name</b>: <code>Alty</code>\n"
         f"<b>Version</b>: <code>{__version__}</code>\n"
         f"<b>Telethon Version</b>: {telever}\n"
-        "<b>Created By</b>: @yaknight\n\n"
+        "<b>Edited By</b>: @AmineSoukara\n\n"
         "<u>Currents Configs:-</u>\n"
         "<b>Torrent Download Engine:-</b> <code>qBittorrent [4.3.0 fix active]</code> \n"
         "<b>Direct Link Download Engine:-</b> <code>aria2</code> \n"
@@ -631,7 +631,7 @@ async def about_me(message):
         "\n"
         f"<b>Latest {__version__} Changelog :- </b> Improved the YTDL error reporting.\n"
         "Fixed a size bug in YTDL.\n"
-        "New /usettings menu for user settings.\n"
+        "New /usersettings menu for user settings.\n"
         "Custom thumbnail Support.\n"
         "User choice force documents.\n"
         "Disable thumbnail also added.\n"
