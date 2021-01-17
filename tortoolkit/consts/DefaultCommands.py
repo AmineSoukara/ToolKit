@@ -1,5 +1,5 @@
 class Commands:
-    LEECH = "leech"
+    LEECH = "dl"
     PURGE = "purge"
     PAUSEALL = "pauseall"
     RESUMEALL = "resumeall"
@@ -12,4 +12,4 @@ class Commands:
     ABOUT = "about"
     GETLOGS = "getlogs"
     SERVER = "server"
-    USERSETTINGS = "usetting"
+    USERSETTINGS = "usersettings"
