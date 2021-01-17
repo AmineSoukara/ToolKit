@@ -123,3 +123,7 @@ Rest Variables are not to changes
 [All the Libraries owner](https://github.com/yash-dk/TorToolkit-Telegram/blob/master/requirements.txt)
 
 # REST README WILL BE COMPLETED SHORTLY
+
+## Easy Deploy:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
