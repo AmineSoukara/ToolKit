@@ -196,9 +196,9 @@ async def check_link(msg,rclone=False,is_zip=False, extract=False):
                     os.remove(path)
             except:pass
         else:
-            torlog.info("Downloadinf Url")
+            torlog.info("Downloading Url")
             #consider it as a direct link LOL
-            rmsg = await omess.reply("processing")
+            rmsg = await omess.reply("Processing")
 
             stat, path = await ariatools.aria_dl(omess.raw_text,"",rmsg,omess)
             if not isinstance(path,bool) and stat:
