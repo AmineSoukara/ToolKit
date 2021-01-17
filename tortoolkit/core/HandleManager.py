@@ -617,7 +617,7 @@ async def about_me(message):
         "<b>Name</b>: <code>Alty</code>\n"
         f"<b>Version</b>: <code>{__version__}</code>\n"
         f"<b>Telethon Version</b>: {telever}\n"
-        "<b>Edited By</b>: @AmineSoukara\n\n"
+        "<b>Created By</b>: @AmineSoukara\n\n"
         "<u>Currents Configs:-</u>\n"
         "<b>Torrent Download Engine:-</b> <code>qBittorrent [4.3.0 fix active]</code> \n"
         "<b>Direct Link Download Engine:-</b> <code>aria2</code> \n"
