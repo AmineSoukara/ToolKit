@@ -440,7 +440,7 @@ async def handle_ytdl_playlist_down(e: MessageLike) -> None:
 
 async def print_files(e,files):
     
-    msg = "#uploads\n"
+    msg = "©️ #Uploads @DamienHelp\n"
     if len(files) == 0:
         return
     
@@ -448,16 +448,16 @@ async def print_files(e,files):
 
     for i in files.keys():
         link = f'https://t.me/c/{str(chat_id)[4:]}/{files[i]}'
-        msg += f'🚩 <a href="{link}">{i}</a>\n'
+        msg += f'👉 <a href="{link}">{i}</a>\n'
      
     rmsg = await e.client.get_messages(e.chat_id,ids=e.message_id)
     rmsg = await rmsg.get_reply_message()
     if rmsg is None:
-        #msg += "\n<a href='tg://user?id={}'>Done<a>".format(rmsg.sender_id)
-        msg += "\n<a href='tg://user?id={}'>Done</a>".format(e.sender_id)
+        #msg += "\n<a href='tg://user?id={}'>✅ Done<a>".format(rmsg.sender_id)
+        msg += "\n<a href='tg://user?id={}'>✅ Done</a>".format(e.sender_id)
         await e.reply(msg,parse_mode="html")
     else:
-        msg += "\n<a href='tg://user?id={}'>Done</a>".format(rmsg.sender_id)
+        msg += "\n<a href='tg://user?id={}'>✅ Done</a>".format(rmsg.sender_id)
         await rmsg.reply(msg,parse_mode="html")
 
     if len(files) < 2:
@@ -478,16 +478,16 @@ async def print_files(e,files):
         chat_id = str(e.chat_id)[4:]
         if index == 0:
             nextt = f'https://t.me/c/{chat_id}/{ids[index+1]}'
-            nextt = f'<a href="{nextt}">Next</a>\n'
+            nextt = f'<a href="{nextt}">Next ➡️</a>\n'
         elif index == len(msgs)-1:
             prev = f'https://t.me/c/{chat_id}/{ids[index-1]}'
-            prev = f'<a href="{prev}">Prev</a>\n'
+            prev = f'<a href="{prev}">⬅️ Prev</a>\n'
         else:
             nextt = f'https://t.me/c/{chat_id}/{ids[index+1]}'
-            nextt = f'<a href="{nextt}">Next</a>\n'
+            nextt = f'<a href="{nextt}">Next ➡️</a>\n'
             
             prev = f'https://t.me/c/{chat_id}/{ids[index-1]}'
-            prev = f'<a href="{prev}">Prev</a>\n'
+            prev = f'<a href="{prev}">⬅️ Prev</a>\n'
 
         try:
             await i.edit("{} {} {}".format(prev,i.text,nextt),parse_mode="html")
