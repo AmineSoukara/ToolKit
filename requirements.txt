@@ -1,6 +1,7 @@
 aiohttp==3.6.2
 anytree==2.8.0
 aria2p==0.9.1
+aria2c
 async-timeout==3.0.1
 attrdict==2.0.1
 attrs==19.3.0
