@@ -162,12 +162,12 @@ async def check_progress_for_dl(aria2, gid, event, previous_message, rdepth = 0,
                 except:
                     pass
                 #
-                msg = f"\nDownloading File: <code>{downloading_dir_name}</code>"
-                msg += f"\n<b>Down:</b> {file.download_speed_string()} 🔽 <b>Up</b>: {file.upload_speed_string()} 🔼"
-                msg += f"\n<b>Progress:</b> {file.progress_string()}"
-                msg += f"\n<b>Size:</b> {file.total_length_string()}"
-                msg += f"\n<b>Info:</b>| P: {file.connections} |"
-                msg += f"\n<b>Using engine:</b> <code>aria2 for directlink</code>"
+                msg = f"\n✅ Downloading File: <code>{downloading_dir_name}</code>"
+                msg += f"\n<b>🚀 Down:</b> {file.download_speed_string()} 🔽 <b>Up</b>: {file.upload_speed_string()} 🔼"
+                msg += f"\n<b>⏳ Progress:</b> {file.progress_string()}"
+                msg += f"\n<b>🗂 Size:</b> {file.total_length_string()}"
+                msg += f"\n<b>ℹ Info:</b>| P: {file.connections} |"
+                msg += f"\n<b>🔰 Using Engine:</b> <code>aria2 for directlink</code>"
                 if file.seeder is False:
                     """https://t.me/c/1220993104/670177"""
                     msg += f"| S: {file.num_seeders} |"
