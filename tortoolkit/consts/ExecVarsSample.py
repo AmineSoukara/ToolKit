@@ -10,7 +10,7 @@ except:
         BOT_TOKEN = "1523666805:AAFtDwzSBdHe88aOBsntwsUBxRyrv5GxVug"
         BASE_URL_OF_BOT = "https://toolkit1717.herokuapp.com"
         # ALLOWED USERS [ids of user or supergroup] seperate by commas
-        ALD_USR = [853393439,-1001474594528,-1001375553926]
+        ALD_USR = [853393439,-1001474594528,-1001375553926,-1001203172496]
         
         # Time to wait before edit message
         EDIT_SLEEP_SECS = 2
